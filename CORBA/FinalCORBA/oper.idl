@@ -1,0 +1,12 @@
+module operApp
+{
+  interface oper
+  {   //string sayHello();
+    //string concat(in string s1, in string s2);
+    //double cel_to_farh(in double celsius);
+    //double farh_to_cel(in double fahrenheit);
+   // float add(in float num1, in float num2);
+     string datetime();
+    oneway void shutdown();
+  };
+};

@@ -1,0 +1,11 @@
+ idlj -fall oper.idl
+
+javac *.java operApp/*.java
+
+orbd -ORBInitialPort 1050&
+
+java operServer -ORBInitialPort 1050 -ORBInitialHost localhost&
+
+java operClient -ORBInitialPort 1050 -ORBInitialHost localhost
+
+
